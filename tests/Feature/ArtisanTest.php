@@ -13,6 +13,7 @@ class ArtisanTest extends TestCase
     /** @test  */
     public function ItCreatesAnApplicationRecord()
     {
+        $this->withoutExceptionHandling();
         $artisan = $this->artisan("register:application");
         $this->assertDatabaseCount("registered_applications",1);
     }

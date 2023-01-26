@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('registered_applications', function (Blueprint $table) {
             $table->id();
+            $table->string("name");
             $table->timestamps();
         });
     }

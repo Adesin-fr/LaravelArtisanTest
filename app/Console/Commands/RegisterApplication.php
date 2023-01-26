@@ -14,7 +14,7 @@ class RegisterApplication extends Command
 
     public function handle()
     {
-        $registerd = RegisteredApplication::create();
+        $registerd = RegisteredApplication::create(["name"=>"a name"]);
 
         return true;
     }
